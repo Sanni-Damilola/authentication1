@@ -16,5 +16,5 @@ app.use("/api", route);
 dataBase();
 
 app.listen(port, () => {
-  console.log("Done! on", port);
+  console.log("Listening on port", port);
 });
