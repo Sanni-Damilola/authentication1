@@ -1,6 +1,8 @@
 import { Router } from "express";
 import { getAll, Login, register } from "../UserController/User.controller"
 
+// route
+
 const route = Router()
 
 route.route("/getall").get(getAll)

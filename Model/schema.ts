@@ -7,6 +7,8 @@ interface data {
   password: string;
 }
 
+// model
+
 interface Idata extends data, mongoose.Document {}
 
 const UserSchema = new mongoose.Schema(

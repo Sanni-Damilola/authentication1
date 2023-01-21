@@ -1,6 +1,7 @@
 import UserModel from "../Model/schema";
 import { Request, Response } from "express";
 
+// post
 export const register = async (
   req: Request,
   res: Response
@@ -27,6 +28,7 @@ export const register = async (
   }
 };
 
+// Authentication
 export const Login = async (req: Request, res: Response): Promise<Response> => {
   try {
     const { email } = req.body;
@@ -46,6 +48,8 @@ export const Login = async (req: Request, res: Response): Promise<Response> => {
   }
 };
 
+
+// get all
 export const getAll = async (
   req: Request,
   res: Response
